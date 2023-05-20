@@ -10,7 +10,7 @@ function Home() {
         const fetchWorkouts = async () => {
 
             try {
-                const response =  await fetch("/api/workouts")
+                const response =  await fetch("http://localhost:5000/api/workouts")
                 const json = await response.json()
     
                 if(response.ok){
