@@ -1,7 +1,7 @@
-import { AuthContext } from "../context/WorkoutContext"
+import { AuthContext } from "../context/AuthContext"
 import { useContext } from "react"
 
-export const useWorkoutsContext = () => {
+export const useAuthContext = () => {
     const context = useContext(AuthContext)
 
     if(!context) {
@@ -10,3 +10,5 @@ export const useWorkoutsContext = () => {
     
     return context
 }
+
+export default useAuthContext
